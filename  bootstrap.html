@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navbar</title>
+
+
+<style>
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    height: 3.7rem;
+    background-color: #2874f0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+#logo{
+    width: 4.8rem;
+    height: 3.1rem;
+    flex-shrink: 0;
+    margin-left: 20%;
+}
+
+.search-container{
+    position: relative;
+    flex: 1;
+    margin-left: 1rem;
+    max-width: 600px;
+}
+
+#search{
+    width: 100%;
+    height: 2.3rem;
+    padding: 0 2.5rem 0 1rem;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+#searchlogo{
+    position: absolute;
+    right: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+#login{
+    width: 7.3rem;
+    height:1.7rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 550;
+    margin-left: 10%;
+    color: #2874f0;
+    background-color: #fff;
+    border: 1px solid #fff;
+
+}
+#more{
+      width: 4.1rem;
+    height:1.7rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 650;
+    margin-left: 3%;
+    color: white    ;
+    background-color: #2874f0;
+    border: none;
+}
+
+#cartlogo{
+    margin-left: 2%;
+}
+#cart{
+    text-decoration: none;
+    
+}
+
+
+@media (max-width: 200px){
+    nav{
+        flex-wrap: wrap;
+        height: auto;
+        /* width: auto; */
+        max-width: 470px;
+    }
+
+    .search-container {
+        margin: 0.5rem 0 0;
+        max-width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+<nav>
+    <img src="Flipkart.jpg" alt="flipkart" id="logo">
+
+    <div class="search-container">
+        <input type="search" id="search" placeholder="Search for products, brands and more">
+        <img src="search.png" alt="search" id="searchlogo">
+        
+    </div>
+   <input type="button" value="Login" id="login">
+   <select id="more" >
+    <option>More</option>
+    <option>shirts</option>
+   </select>
+
+    <img src="cart.png" id="cartlogo" title="cart">
+    <a href="/" id="cart">Cart</a>
+
+
+</nav>
+</body>
+</html>
