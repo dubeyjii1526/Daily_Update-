@@ -1,0 +1,118 @@
+AWS IAM alias : 654654513821
+
+
+GIT PULL USING SSH
+
+
+
+https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+
+
+A. Checking for existing SSH keys
+
+ls -al ~/.ssh
+
+By default, the filenames of the public keys are one of the following:
+
+id_dsa.pub
+id_rsa.pub
+
+
+B. Create New SSH Key
+
+1. Open Terminal.
+
+Paste the text below, substituting in your GitHub email address.
+
+ssh-keygen -t rsa -b 4096 -C "chintan.d@simform.in"
+
+2. This creates a new ssh key, using the provided email as a label.
+
+
+Generating public/private rsa key pair.
+When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+
+
+Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [project_name recommanded] [Press enter]
+At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases".
+
+
+Enter passphrase (empty for no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again]
+
+
+C. Adding your SSH key to the ssh-agent
+
+
+1. Ensure ssh-agent is enabled:
+
+# start the ssh-agent in the background
+eval "$(ssh-agent -s)"
+Agent pid 59566
+
+
+2. Add your SSH key to the ssh-agent. If you used an existing SSH key rather than generating a new SSH key, you'll need to replace id_rsa in the command with the name of your existing private key file.
+
+$ ssh-add ~/.ssh/id_rsa
+
+
+
+D. Add Pulbic (.pub) Key to BitBucker Deployment Key or Git Hub
+
+
+https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account
+	
+E. Copy Public Key from .pub
+
+cat ~/.ssh/id_rsa.pub | pbcopy
+
+F. For exisitng cloned project replace your account with simformteam account, you could find this link from respactive repository
+
+git remote set-url origin git@bitbucket.org:simformteam/halal-backend.git
+
+
+
+This is the public key for reg@simform.inssh-rsa
+
+AAAAB3NzaC1yc2EAAAADAQABAAACAQC/Gc59JZPAZvs7yFosMZl+GR4wQnJxqNsyDqIrbSjbTYcVh9NRkMHFxdiCN2SloIqi9YcCC1didJnEqIxXHBhAxR/JZAel9SNhK40jFJLbFjc/xWP1VTEn0gZ+fvWXX9peD7S8apkGUfFr0iT/avAA9HGT4p0V3b2p1nm/hOlC4xknQTnd3+F26BdYnGGKzVnjMcVZ0TB/CcwpCaWVUOQ6nSVDERcj2BJ1CB1MHs5YgTWyFo82RowWzxUo/jTvwaL/Mm5JDi12Om6BDXQnx+egbTL02e3K0B9aFfbyOdKaw+tYmOui9rKDdBHLT4TZenuF/e4A2A5AYSkMDJqqVCEbTPozCTx30W6jRUNBrZerArF27arVPGG/ufy8mBQySk3zYY+ZUpypu81JLVTk/LG9sRJvmJY1gqsW0c3njb2rsfFJxWduPK/W7tBl72bpP+Xbu2q38Ixk25rrUcuxGIOTUegjqHlLsaK8QNNVZuICgf0t50Gh1ilgB9NBmQp7ddd8qcInIPTeCCwG5DemRtQ9bkU4BRR8zPomcrFg9AJrptQmxQsMJ57Sc8/hg1sCqMUNZ4gdmPHFxBr7XSYfswkSWF1Fb7zj7giGrvPqoG1o/Vr/vPTaE8ls2ED/ZP552BuB8yiyoyCk6tFYHzDjlrIkwKpTvmuZuNboQY12+X4Cfw== reg@simform.in
+
+Add private key permanently with ssh-add on Ubuntu
+A solution would be to force the key files to be kept permanently, by adding them in your ~/.ssh/config file:
+
+IdentityFile ~/.ssh/gitHubKey
+IdentityFile ~/.ssh/id_rsa_buhlServer
+
+http://stackoverflow.com/a/4246809/1578380
+
+Sometimes you may get error like
+fatal: failed to write object
+error: unpack-objects exited with error code 128
+error: unpack failed: unpack-objects abnormal exit
+
+just run following sequence of commands
+
+ssh me@myserver
+cd repository/.git
+
+sudo chmod -R g+ws *
+sudo chgrp -R mygroup *
+
+git config core.sharedRepository true
+
+Sometimes ssh-add is not having ssh key identity in process list
+     Like 
+ ssh-add -l
+ 
+The agent has no identities.
+ 
+Solution 
+ ssh-add ~/.ssh/simform_solutions
+ 
+Identity added: /home/ubuntu/.ssh/simform_solutions (/home/ubuntu/.ssh/simform_solutions)
+ 
+Check
+ssh-add -l
+ 
+4096 c1:d7:05:86:b0:b0:b3:26:c9:d2:c1:84:2a:af:8f:51 /home/ubuntu/.ssh/simform_solutions (RSA)
+ 
+
