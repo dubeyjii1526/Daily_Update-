@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- <script>
@@ -11,20 +11,24 @@
         }
     </script> -->
     <!-- <script src="script.js"></script> -->
-</head>
-<body>
+  </head>
+  <body>
     Basic onclick Event
+     <div id="box" style="width: 200px; height: 200px; border: 1px solid black;">hover over me</div>
+     <div class="a">
+        <button type="button" onclick="addMember()" id="addBtn">Add Item</button>
+        <div id="conatiner"></div>
+     </div>
     <!-- <p id="demo">Hello Ankush</p>
     <button type="button" onclick=" document.getElementById('demo').innerHTML = 'Good Morning' "> Click Me</button> -->
 
-<!-- <p id="demo">Hello Ankush</p>
+    <!-- <p id="demo">Hello Ankush</p>
     <button type="button" onclick=" myfunction() " > Click Me</button> -->
-     <!-- <script>
+    <!-- <script>
         function myfunction(){
             document.getElementById("demo").innerHTML='Hlo';
         }
     </script> -->
-
 
     <!-- <h2>My Game</h2>
 <p>Current Status: Noob</p>
@@ -32,7 +36,7 @@
 <button type="button" onclick="document.write('Game Over: You are now a Pro')">
   Click to Overwrite
 </button> -->
-<!-- <br>
+    <!-- <br>
 <h3>Calculations</h3>
 <script>
 
@@ -40,183 +44,323 @@
  alert(5+6);
  </script> -->
 
- <!-- <p>Practice of window.print</p>
+    <!-- <p>Practice of window.print</p>
  <button onclick="window.print()">Print this page</button> -->
 
- <!-- <h1>JS Keywords</h1>
+    <!-- <h1>JS Keywords</h1>
  <p id="data"> </p>
  <script>
  let a=5;
  const age="My age ";
  document.getElementById("data").innerHTML=age+"is" + " "+a;
 </script> -->
-<p id="demo"> Evening</p>
+    <p id="demo">Evening</p>
 
-<script>
-    // let a=5;
-    //  a=6;
-    // console.log(a);
-// let a=5;
-// console.log(a);
-// {
-//     let a=7;
-//     console.log(a);
-// }
-// console.log(a);
+    <script>
+      // let a=5;
+      //  a=6;
+      // console.log(a);
+      // let a=5;
+      // console.log(a);
+      // {
+      //     let a=7;
+      //     console.log(a);
+      // }
+      // console.log(a);
 
-// const a=5;
-// console.log(a);
-// {
-//     const a=7;
-//     console.log(a);
-// }
-// console.log(a);
+      // const a=5;
+      // console.log(a);
+      // {
+      //     const a=7;
+      //     console.log(a);
+      // }
+      // console.log(a);
 
-// console.log(6 + 1);
+      // console.log(6 + 1);
 
-// var a;
-// console.log(a);
-// var a=5;
+      // var a;
+      // console.log(a);
+      // var a=5;
 
-// console.log(a);
-// let a=5;
+      // console.log(a);
+      // let a=5;
 
-// if(new Date().getHours()<16){
-//     document.getElementById("demo").innerHTML="afternoon";
-// }
+      // if(new Date().getHours()<16){
+      //     document.getElementById("demo").innerHTML="afternoon";
+      // }
 
+      // const hours= new Date().getHours()
+      // let greetings;
+      // if(hours<18){
+      //    greetings="afternoon";
+      // }
+      // else{
+      //     greetings="evening";
+      // }
+      // document.getElementById("demo").innerHTML=greetings;
 
-// const hours= new Date().getHours()
-// let greetings;
-// if(hours<18){
-//    greetings="afternoon";
-// }
-// else{
-//     greetings="evening";
-// }
-// document.getElementById("demo").innerHTML=greetings;
+      // const players=["ankush","abhi","dhruv","dubey"];
+      // let text="";
+      // for(let i=0; i< players.length;i++){
+      //     text+=players[i]+"<br>";
+      // }
+      // document.getElementById("demo").innerHTML=text;
+      // let i=0;
+      // let text="";
+      // while(players[i]){
+      //     text+=players[i] + "<br>";
+      //     i++;
+      // }
+      // document.getElementById("demo").innerHTML=text;
+      // let text="";
 
-// const players=["ankush","abhi","dhruv","dubey"];
-// let text="";
-// for(let i=0; i< players.length;i++){
-//     text+=players[i]+"<br>";
-// }
-// document.getElementById("demo").innerHTML=text;
-// let i=0;
-// let text="";
-// while(players[i]){
-//     text+=players[i] + "<br>";
-//     i++;
-// }
-// document.getElementById("demo").innerHTML=text;
-// let text="";
+      // loop1: for(let i=1;i<5;i++){
+      //     loop2:for(j=1;j<5;j++){
+      //         if(j===3){break loop1;}
+      //         text+=j+"<br>";
 
-// loop1: for(let i=1;i<5;i++){
-//     loop2:for(j=1;j<5;j++){
-//         if(j===3){break loop1;}
-//         text+=j+"<br>";
+      //     }
 
-//     }
+      // }
+      // document.getElementById("demo").innerHTML=text;
 
+      // let firstname="Ankush"
+      // let lastname="Dubey"
+      // let text=`My name is ${firstname}, ${lastname}`;
+      // document.getElementById("demo").innerHTML=text;
 
-// }
-// document.getElementById("demo").innerHTML=text; 
+      // let text="My name is Ankush Dubey. My fkd My"
+      // let a=text.match(/My/g);
+      // document.getElementById("demo").innerHTML=a.length + a;
+      // var a=6;
+      // function sayHello(){
+      //     // var a=5;
+      //     console.log(a);
+      // }
+      // sayHello();
+      // console.log(a);
 
-// let firstname="Ankush"
-// let lastname="Dubey"
-// let text=`My name is ${firstname}, ${lastname}`;
-// document.getElementById("demo").innerHTML=text;
+      // function counter(){
+      //     let steps=0;
+      //     let c=1;
+      //     while(c<100){
+      //         c*=2;
+      //         steps++;
+      //     }
+      //     return `final value ${c} and ${steps}`;
+      // }
 
-// let text="My name is Ankush Dubey. My fkd My"
-// let a=text.match(/My/g);
-// document.getElementById("demo").innerHTML=a.length + a;
-// var a=6;
-// function sayHello(){
-//     // var a=5;
-//     console.log(a);
-// }
-// sayHello();
-// console.log(a);
+      // console.log(counter());
 
-// function counter(){
-//     let steps=0;
-//     let c=1;
-//     while(c<100){
-//         c*=2;
-//         steps++;
-//     }
-//     return `final value ${c} and ${steps}`;
-// }
- 
-// console.log(counter());
+      // function calculatePower(base,exponent){
+      // result=1;
+      // for(let i=1;i<=exponent;i++){
+      //     result*=base;
+      //     console.log(result);
+      // }
+      // return result;
+      // }
+      // console.log(calculatePower(2,4));
 
-// function calculatePower(base,exponent){
-// result=1;
-// for(let i=1;i<=exponent;i++){
-//     result*=base;
-//     console.log(result);
-// }
-// return result;
-// }
-// console.log(calculatePower(2,4));
+      // let score =100;
+      // function adjustScore(){
+      //     let score=0;
+      //     for(let i=1;i<=5;i++){
+      //         score+=10;
+      //         console.log(score);
+      //     }
+      //     return score;
+      // }
+      // console.log(adjustScore());
+      // console.log(score);
 
-// let score =100;
-// function adjustScore(){
-//     let score=0;
-//     for(let i=1;i<=5;i++){
-//         score+=10;
-//         console.log(score);
-//     }
-//     return score;
-// }
-// console.log(adjustScore());
-// console.log(score);
+      // let x = 10;
 
-// let x = 10;
+      // function ghost() {
+      //     console.log(x);
+      //     let x = 20;
+      // }
 
-// function ghost() {
-//     console.log(x); 
-//     let x = 20;
-// }
+      // ghost();
+      // let a=10;
+      // function b(){
+      //     console.log(a);
+      //     let a=20;
+      // }
 
-// ghost();
-// let a=10;
-// function b(){
-//     console.log(a);
-//     let a=20;
-// }
+      // b();
 
-// b();
+      // function x(){
+      //  var a=10;
+      //  function y(){
+      //     console.log(a);
+      //  }
+      //  return y;
+      // }
+      // var z=x();
+      // console.log(z);
+      // z();
 
-// function x(){
-//  var a=10;
-//  function y(){
-//     console.log(a);
-//  }
-//  return y;
-// }
-// var z=x();
-// console.log(z);
-// z();
+      // var x=1;
+      // a();
+      // b();
+      // console.log(x);
+      // function a(){
+      //     var x=10;
+      //     console.log(x);
 
-function x(){
-    var a=8;
-    function b(){
-        console.log(a);
+      // }
+      // function b(){
+      //     var x=100;
+      //     console.log(x);
+      // }
 
-    }
-    a=100;
-    return b;
-}
-var z=x();
-// console.log(z);
-z();
+      //  const teams=["Ind","aus","srilanka","Nep,"]
+      // let l=teams.length;
+      // let text="<ul>";
+      //     for(let i=0;i<l;i++){
+      //         text+=  "<li>" + teams[i] +  "</li>";
 
+      //     }
+      //     text += "</ul>"
+      // document.getElementById("demo").innerHTML=text;
 
+      //  const teams=["Ind","aus","srilanka","Nep,"]
+      // let l=teams.length;
+      // let text="<ul>";
 
-</script>
+      //     teams.forEach(fun);
+      //     function fun(value)
+      //     {
+      //         text+="<li>" + value + "</li>";
+      //     }
+      //     // for(let i=0;i<l;i++){
+      //     //     text+=  "<li>" + teams[i] +  "</li>";
 
+      //     // }
+      //     text += "</ul>"
+      // document.getElementById("demo").innerHTML=text;
 
+      // const arr=[1,2,3,4,5,6];
+      //     const newArr=arr.flatMap(x=>[x,x*10]);
+      //     document.getElementById("demo").innerHTML=newArr;
 
-</body>
+      //for Each Loop
+
+      // const val=[1,2,3,4,5]
+      // let text="";
+      // val.forEach(myFun);
+
+      // function myFun(val){
+      //     text+=val + "<br>";
+      // }
+      // document.getElementById("demo").innerHTML=text;
+
+      //JavaScript Array map()
+      // The map() method creates a new array by performing a function on each array element.
+
+      // The map() method does not execute the function for array elements without values.
+
+      // The map() method does not change the original array.
+
+      //Creates  a new array
+
+      // const a=[1,2,3,4];
+      // const text="";
+      // const b=a.map(myFun);
+      // function myFun(value,index,array){
+      //     // text+= value*2;
+      //     return value*2;
+      // }
+      // document.getElementById("demo").innerHTML=b;
+
+      // Flatmap
+      // Can be different (shorter or longer)
+      // Structure	Preserves nested arrays	Flattens nested arrays by 1 level
+      // Use Case	1-to-1 transformation	1-to-many or 1-to-0 transformations
+
+      // const numbers = [1, 2, 3, 4];
+
+      // const result = numbers.flatMap(n => {
+      //   if (n % 2 === 0) {
+      //     return [n, n * 10];
+      //   } else {
+      //     return [];
+      //   }
+      // });
+
+      // console.log(result);
+
+      //Filter:The .filter() method is like a security guard at a club: it looks at every element in your array and only lets the ones that meet a specific condition pass through into a brand new array.
+      // const age=[10,15,20,25];
+      // const adults=age.filter(age=>{
+      // return age>18;
+
+      // });
+      // console.log(adults);
+
+      // const num=[1,2,3,4,5];
+      // const odd=num.filter(x=>x<3);
+      // // function oddOne(x){
+      // //     return x%2===0;
+      // // }
+      // console.log(odd);
+
+      //Reducer
+    //   const a = [1, 2, 3, 4, 5];
+    //   const output = a.reduce(function (acc, curr) {
+    //     acc = acc + curr;
+    //     return acc;
+    //   }, 0);
+    //   console.log(output);
+
+      //   const output = a.reduce(function (max, curr) {
+      //     if (curr > max) {
+      //       max = curr;
+      //     }
+      //     return max;
+      //   }, 0);
+      // console.log(output);
+
+    //   const users = [
+    //     { firstname: "ankush", lastname: "dubey", age: 21 },
+    //     { firstname: "ankush", lastname: "dubey", age: 23 },
+    //     { firstname: "ankush", lastname: "dubey", age: 22 },
+    //     { firstname: "ankush", lastname: "dubey", age: 23 },
+    //   ];
+
+    //   const output=users.map(x=>x.firstname+" "+x.lastname);
+    //   console.log(output);
+    //   const output=users.reduce(function(acc,curr){
+    //       if(acc[curr.age]){
+    //           acc[curr.age]=++acc[curr.age];
+    //       }
+    //       else{
+    //           acc[curr.age]=1;
+    //       }
+    //       return acc;
+    //   },{});
+    //   console.log(output);
+
+        // const box=document.getElementById("box");
+        // box.addEventListener("mouseover", function () {
+        //     box.innerHTML="currently you are viewing this effect because of event listner";
+        // });
+        // box.addEventListener("mouseout",function(){
+        //     box.innerText="hover";
+        // });
+
+       const addBtn=document.querySelector("#addBtn");
+       const conatiner=document.querySelector("#container");
+        function createBox(person,gameName){
+            const box=document.createElement("div");
+            box.className="person-box";
+        }
+        box.innerHTML=`
+        
+        `
+
+    </script>
+   
+  </body>
 </html>
