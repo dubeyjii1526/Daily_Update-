@@ -1,0 +1,121 @@
+innerHTML:-Call the html element by its Id and change its value or data.
+innerText:-it changes only simple text
+document.write:-when called after the end of document it can clear the whole page and rewrites the given content.
+window.alert:-popup the output
+console.log():-for debugging purpose 
+window.print():-The only exception is that you can call the window.print() method in the browser to print the content of the current window.
+
+Literal-Fixed Values
+Variables:Variable Values
+
+Hyphens are not allowed in JavaScript. They are reserved for subtractions.
+
+Variables:-
+let:-cannot create two variable with same name,not changes outside value after reinitialization
+var:-not working even for block level code ,changes outside value also(outside block)
+const:-Reinitialization is not possible
+
+Datatypes
+String	A text of characters enclosed in quotes
+Number	A number representing a mathematical value
+Bigint	A number representing a large integer
+Boolean	A data type representing true or false
+Object	A collection of key-value pairs of data
+Undefined	A primitive variable with no assigned value
+Null	A primitive value representing object absence
+Symbol	A unique and primitive identifier
+
+==->value,===-> value and type
+!=->value , !==->value and type
+
+Closures:
+Module Design Pattern
+Currying
+Functions like once 
+memoize 
+maintaining state in async 
+setTimeouts
+Iterators
+
+
+function x(){
+    var a=8;
+    function b(){
+        console.log(a);
+
+    }
+    a=100;
+    return b;
+}
+var z=x();
+// console.log(z);
+z();
+
+Object Protection
+
+Object.preventExtension:-
+object.seal:-
+object.freeze:-
+
+
+Feature	    Prevent Extensions	Seal	Freeze
+Add New Properties	❌ No	❌ No	❌ No
+Delete Properties	✅ Yes	❌ No	❌ No
+Change Values	✅ Yes	✅ Yes	❌ No
+Change Attributes (e.g. enumerable)	✅ Yes	❌ No	❌ No
+
+
+This keyword
+
+
+1.   Method Invocation (The Object to the Left)
+When a function is called as a property of an object, this refers to that object.
+2.  Simple Function Invocation (The Window/Global)
+If a function is called "standalone," this defaults to the Global Object (window in browsers). If you are in Strict Mode, it will be undefined.
+3.   Constructor Invocation (new keyword)
+When you use new, JavaScript creates a brand-new empty object, and this points to that new object.
+
+
+.4.  The Arrow Function Exception 🏹
+Arrow functions do not have their own this. They inherit this from the code surrounding them (lexical scoping)
+
+
+3. this in the Global Context
+If you use this outside of any function (at the top level of your script), it refers to the global object.
+
+4. this in Classes
+Inside a class constructor or a class method, this refers to the specific instance created by that class.
+
+
+
+First Class Function
+--The ability to use function as values  and pass a function as an argument and return a function are called first class function
+Statement:- normal function
+expression:-storing anonymous function to a var
+
+
+
+Promise
+Method	Purpose
+resolve(value)	Marks the task as finished successfully.
+reject(error)	Marks the task as failed.
+.then()	Handles the success result.
+.catch()	Handles errors or rejections.
+.finally()	Executes logic regardless of the outcome.
+Promise.all()	Runs multiple promises in parallel and waits for all to finish.
+
+
+
+
+Async Timeouts:
+--when function passed as an argument it does not require()
+
+
+JS JSON:-
+--all keys,value should be inside ""
+JSON parse()-strng to object,JSON stringify():-object to string
+JSON.stringify actually takes three arguments: (value, replacer, space).
+console.log(JSON.stringify(user, null, 2));
+
+
+
