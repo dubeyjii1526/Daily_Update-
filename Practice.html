@@ -14,11 +14,13 @@
   </head>
   <body>
     Basic onclick Event
-     <div id="box" style="width: 200px; height: 200px; border: 1px solid black;">hover over me</div>
-     <div class="a">
-        <button type="button" onclick="addMember()" id="addBtn">Add Item</button>
-        <div id="conatiner"></div>
-     </div>
+    <div id="box" style="width: 200px; height: 200px; border: 1px solid black">
+      hover over me
+    </div>
+    <div class="a">
+      <!-- <button type="button" onclick="addMember()" id="addBtn">Add Item</button> -->
+      <div id="conatiner"></div>
+    </div>
     <!-- <p id="demo">Hello Ankush</p>
     <button type="button" onclick=" document.getElementById('demo').innerHTML = 'Good Morning' "> Click Me</button> -->
 
@@ -55,6 +57,8 @@
  document.getElementById("data").innerHTML=age+"is" + " "+a;
 </script> -->
     <p id="demo">Evening</p>
+
+    <button id="btn ">Debounce</button>
 
     <script>
       // let a=5;
@@ -307,12 +311,12 @@
       // console.log(odd);
 
       //Reducer
-    //   const a = [1, 2, 3, 4, 5];
-    //   const output = a.reduce(function (acc, curr) {
-    //     acc = acc + curr;
-    //     return acc;
-    //   }, 0);
-    //   console.log(output);
+      //   const a = [1, 2, 3, 4, 5];
+      //   const output = a.reduce(function (acc, curr) {
+      //     acc = acc + curr;
+      //     return acc;
+      //   }, 0);
+      //   console.log(output);
 
       //   const output = a.reduce(function (max, curr) {
       //     if (curr > max) {
@@ -322,33 +326,33 @@
       //   }, 0);
       // console.log(output);
 
-    //   const users = [
-    //     { firstname: "ankush", lastname: "dubey", age: 21 },
-    //     { firstname: "ankush", lastname: "dubey", age: 23 },
-    //     { firstname: "ankush", lastname: "dubey", age: 22 },
-    //     { firstname: "ankush", lastname: "dubey", age: 23 },
-    //   ];
+      //   const users = [
+      //     { firstname: "ankush", lastname: "dubey", age: 21 },
+      //     { firstname: "ankush", lastname: "dubey", age: 23 },
+      //     { firstname: "ankush", lastname: "dubey", age: 22 },
+      //     { firstname: "ankush", lastname: "dubey", age: 23 },
+      //   ];
 
-    //   const output=users.map(x=>x.firstname+" "+x.lastname);
-    //   console.log(output);
-    //   const output=users.reduce(function(acc,curr){
-    //       if(acc[curr.age]){
-    //           acc[curr.age]=++acc[curr.age];
-    //       }
-    //       else{
-    //           acc[curr.age]=1;
-    //       }
-    //       return acc;
-    //   },{});
-    //   console.log(output);
+      //   const output=users.map(x=>x.firstname+" "+x.lastname);
+      //   console.log(output);
+      //   const output=users.reduce(function(acc,curr){
+      //       if(acc[curr.age]){
+      //           acc[curr.age]=++acc[curr.age];
+      //       }
+      //       else{
+      //           acc[curr.age]=1;
+      //       }
+      //       return acc;
+      //   },{});
+      //   console.log(output);
 
-        // const box=document.getElementById("box");
-        // box.addEventListener("mouseover", function () {
-        //     box.innerHTML="currently you are viewing this effect because of event listner";
-        // });
-        // box.addEventListener("mouseout",function(){
-        //     box.innerText="hover";
-        // });
+      // const box=document.getElementById("box");
+      // box.addEventListener("mouseover", function () {
+      //     box.innerHTML="currently you are viewing this effect because of event listner";
+      // });
+      // box.addEventListener("mouseout",function(){
+      //     box.innerText="hover";
+      // });
 
       //  const addBtn=document.querySelector("#addBtn");
       //  const conatiner=document.querySelector("#container");
@@ -357,15 +361,15 @@
       //       box.className="person-box";
       //   }
       //   box.innerHTML=`
-        
+
       //   `
 
-//           const user=["ankush","dubey","tiwari"];
-//           createOrder(cart,function (){
-//             proceedToPayment(orderId);
-//           }
-// )
-         
+      //           const user=["ankush","dubey","tiwari"];
+      //           createOrder(cart,function (){
+      //             proceedToPayment(orderId);
+      //           }
+      // )
+
       // Promises
       // --State:-pending,fulfilled
       // --Result:-undefined,Response
@@ -373,38 +377,102 @@
       // const API="WWW.google.com"
       // const user=fetch(API);
       // console.log(user);
-//                                          CALLBACK HELL situation
+      //                                          CALLBACK HELL situation
 
-//       const cart=['a','b','c'];
-//       createOrder(cart,function (orderId){
-//  proceedToPayment(orderId, function(){
-//          shoeOrderSummary(paymentInfo)
-//      }
-//      );
-//         }
-//      );
+      //       const cart=['a','b','c'];
+      //       createOrder(cart,function (orderId){
+      //  proceedToPayment(orderId, function(){
+      //          shoeOrderSummary(paymentInfo)
+      //      }
+      //      );
+      //         }
+      //      );
 
-    
-                                                            //PROMISE CHAINING
-                                                            //Include return always
+      //PROMISE CHAINING
+      //Include return always
 
-//         const promise =createOrder(cart)
-//         .then(function (orderId){
-//  return proceedToPayment(orderId);
-//         })
-//         .then(function(summary){
-//             return showOrderSummary(summary)
-//         })
+      //         const promise =createOrder(cart)
+      //         .then(function (orderId){
+      //  return proceedToPayment(orderId);
+      //         })
+      //         .then(function(summary){
+      //             return showOrderSummary(summary)
+      //         })
 
+      // const promise =createOrder(cart)
+      // .then(orderId=> proceedToPayment(orderId))
 
-        // const promise =createOrder(cart)
-        // .then(orderId=> proceedToPayment(orderId))
-        
-        // .then(summary=> showOrderSummary(summary))
-        // sfp[sk]
+      // .then(summary=> showOrderSummary(summary))
+      // sfp[sk]
 
+      //Async Await in JS
 
+      //always returns a promise
+      //async keyword is used
+      // async function a(){
+      //   return "Namste";
+      // }
+      // const b=a();
+      // console.log(b);
+      //  b.then((data)=>console.log(data));
+
+      // const p=new Promise((resolve,reject)=>{
+      //   setTimeout(()=>{
+
+      //     resolve( "Promise resolved" );
+      //   },5000);
+      // });
+      //   const p1=new Promise((resolve,reject)=>{
+      //   setTimeout(()=>{
+
+      //     resolve( "Promise resolved" );
+      //   },6000);
+      // });
+
+      //   async function getData(){
+      //     // return "Promise is being resolved"
+      //     console.log("Hello");
+      //     const b=await p;
+      //     console.log(b);
+      //        const c=await p1;
+      //     console.log(c);
+
+      //   }
+      //   getData();
+      // const a=getData();
+      // a.then((res)=>console.log(res));
+
+      //             const API="https://api.github.com/users/dubeyjii1526"
+      // async function fetchApi(){
+      // const resp=await   fetch(API);
+      // const json=await resp.json();
+      // console.log(json);
+      // // console.log(resp);
+
+      // // }
+
+      // // fetchApi();
+
+      // function debounce(func, delay) {
+      //   let timeoutId;
+
+      //   return function (...args) {
+      //     clearTimeout(timeoutId);
+
+      //     timeoutId = setTimeout(() => {
+      //       func.apply(this, args);
+      //     }, delay);
+      //   };
+      // }
+
+      // const handleSearch = (event) => {
+      //   console.log("Searching for:", event.target.value);
+      // };
+
+      // const debouncedSearch = debounce(handleSearch, 500);
+
+      // console.log(debouncedSearch);
+      // document.querySelector("#btn").addEventListener("click", debouncedSearch);
     </script>
-   
   </body>
 </html>
